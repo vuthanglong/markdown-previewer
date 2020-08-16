@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <script
+      src="https://kit.fontawesome.com/b6bca6c463.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Markdown Previewer</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Markdown Previewer <i class="fas fa-edit"></i></h1>
+      </div>
+      <div class="flex-container">
+        <div class="flex-area">
+          <div id="left-bar" class="bar"><strong>Editor</strong></div>
+          <textarea id="editor" onkeyup="updatePreview()"></textarea>
+        </div>
+        <div class="flex-area">
+          <div id="right-bar" class="bar"><strong>Previewer</strong></div>
+          <div id="preview"></div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/marked/1.1.1/marked.js"
+      integrity="sha512-WUj/9d0+WiqmZ3fHLdrjLmuwMnattuKZKOcN03r4++v6IDlTO27Ow/+/2zoiqzDWKn3uDa9skO6Vun5wWKJ9sg=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>

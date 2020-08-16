@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lato", "Lucida Grande", "Lucida Sans Unicode", Tahoma, Sans-Serif;
+}
+
+.container {
+  margin: 30px 8px;
+  padding: 15px;
+  border-radius: 5px;
+  background: #eee;
+  height: auto;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .header {
+  display: block;
+  text-align: center;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.container .flex-container {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.container .flex-container .flex-area {
+  background: #f6f6f6;
+  width: 50%;
+  margin: 5px;
+  word-wrap: break-word;
+  border: 1px solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .flex-container .flex-area .bar {
+  padding: 4px 4px 3px 10px;
+  background: #dadada;
+  border: 2px solid;
+}
+
+.container .flex-container #editor {
+  background: #f6f6f6;
+  margin: 0px 0px -1px -1px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  width: 100%;
+  resize: none;
+  outline: none;
+}
+
+.container .flex-container #preview {
+  padding: 30px;
+}
+/*# sourceMappingURL=style.css.map */
